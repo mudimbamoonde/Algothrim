@@ -16,14 +16,20 @@ Do point a and b above 18 times.
     private static int times = 2;
 
     public static void main(String[] args) {
-//        FibNums(0,1,18);
-        FibNumsRecursion(0,1,1,18);
+//   lopps
+//    FibNums(0,1,18);
+//    Recursion
+//        FibNumsRecursion(0,1,1,18);
+
+
+        int value = f(19);
+        System.out.println(value);
     }
 
 
 
 //    LOOP implementation
-    public static void FibNums(int prev, int end , int times){
+public static void FibNums(int prev, int end , int times){
         int FiboNewValue;
         System.out.println(prev);
         System.out.println(end);
@@ -51,6 +57,15 @@ public static void FibNumsRecursion(int prev, int current, int count, int limit)
 }
 
 
+//To find the n th Fibonacci number we can write code based on the mathematic formula for Fibonacci number n :
+//F(n)=F(n−1)+F(n−2)
+    public static int f(int n){
+        if (n <=1){
+          return n;
+        }else{
+            return f(n -1) + f(n-2);
+        }
+    }
 
 
 
